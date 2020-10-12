@@ -9,20 +9,20 @@
   height: 100vh;
   justify-content: center;
   align-items: center;
-  background: url('./assets/Group\ 15.png') no-repeat bottom;
+  background: url("./assets/Group\ 15.png") no-repeat bottom;
 }
-.credits{
-  font-family: 'Poppins', sans-serif;
+.credits {
+  font-family: "Poppins", sans-serif;
   color: #fff;
   font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 7.3px;
 }
-.description{
+.description {
   padding-right: 150px;
 }
-.title{
-  font-family: 'Poppins', sans-serif;
+.title {
+  font-family: "Poppins", sans-serif;
   color: #fff;
   font-size: 50px;
   padding-bottom: 400px;
@@ -37,13 +37,14 @@
   width: 50%;
   margin-right: -100px;
 }
-.gallery img{
+.gallery img {
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
   transition: 0.1s;
   width: 300px;
   height: 300px;
+  object-fit: cover;
 }
-.gallery img:hover{
+.gallery img:hover {
   transform: scale(1.05);
   cursor: zoom-in;
 }
@@ -62,7 +63,7 @@
   display: none;
   overflow: hidden;
 }
-.closeBtn{
+.closeBtn {
   position: fixed;
   top: 3.5%;
   right: 2.5%;
@@ -74,10 +75,10 @@
   width: 20px;
   z-index: 100;
 }
-.closeBtn:hover{
+.closeBtn:hover {
   cursor: pointer;
 }
-.left{
+.left {
   color: #fff;
   height: 30px;
   width: 30px;
@@ -85,31 +86,32 @@
   padding-right: 30px;
   position: fixed;
   left: 1.5%;
-  background-image: url('./assets/left.png');
+  background-image: url("./assets/left.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   z-index: 90;
 }
-.right{
+.right {
   color: #fff;
   height: 30px;
   width: 30px;
   font-size: 40px;
   position: fixed;
   right: 1.5%;
-  background-image: url('./assets/right.png');
+  background-image: url("./assets/right.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   z-index: 90;
 }
 
-.left:hover, .right:hover{
+.left:hover,
+.right:hover {
   cursor: pointer;
 }
 
-.move{
+.move {
   position: absolute;
   width: 600%;
   height: 100%;
@@ -120,16 +122,16 @@
   justify-content: space-around;
   transition: all 0.5s;
 }
-.move__img{
-    display: flex;
-    justify-content: center;
-    align-content: start;
-    height: 85%;
-    margin-top: 50px;
-    position: relative;
-    z-index: 98;
+.move__img {
+  display: flex;
+  justify-content: center;
+  align-content: start;
+  height: 85%;
+  margin-top: 50px;
+  position: relative;
+  z-index: 98;
 }
-.move__img img{
+.move__img img {
   object-fit: cover;
   animation-name: slide;
   animation-duration: 0.3s;
@@ -137,18 +139,22 @@
   position: relative;
   z-index: 99;
 }
-.imgText{
+.imgText {
   position: fixed;
   bottom: 3.5%;
   left: 50%;
   color: #fff;
   font-size: 20px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 100;
   letter-spacing: 2px;
   transform: translateX(-50%);
 }
 @keyframes slide {
-  from {transform: scale(0);}
-  to {transform: scale(1);}
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
